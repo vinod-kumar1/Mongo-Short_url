@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortner</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h2>URL Shortener</h2>
+      <div class="page">
+        <input id="url" type="url" placeholder="Enter the URL here..." />
+        <br />
+        <button onclick="sendUrl()">Get Short URL</button>
+      </div>
+      <div id="divver" style="display: none">
+        <span
+          id="shortURL"
+          style="
+            width: fit-content;
+            background-color: transparent;
+            color: white;
+            padding: 0.7rem 1rem;
+            border-radius: 2px;
+          "
+        ></span>
+        <button
+          id="copyButton"
+          style="border: 0.5px solid white; background-color: transparent"
+        >
+          Click to copy
+        </button>
+      </div>
+    </div>
+    <script src="./apper.js"></script>
+  </body>
+</html>
